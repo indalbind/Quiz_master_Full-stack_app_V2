@@ -1,0 +1,403 @@
+.maincontent {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('/static/images/background/home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: 118px;
+  margin-top: 18px;
+}
+
+.tagline {
+  font-size:1rem;
+  margin-top: 0.5rem;
+  color: #b1a9a9;
+}
+.description {
+  font-size: 1.2rem;
+}
+.intro{
+  font-size: 1.5rem;
+}
+
+.highlight {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 3rem;                     
+  color: #00d1b2;                   
+  font-weight: 700;                   
+  letter-spacing: 1px;                 
+  text-transform: uppercase;           
+}
+
+/* for nav bar  */
+
+.auth-buttons a {
+    margin-left: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+  
+.auth-buttons .signup {
+    /* background: #a347f3; */
+    background: #6ec2a6;
+    /* background: #e6bc69; */
+    color: #fdfdfd;
+    /* border: 2px solid #6ec2a6; Green */
+    
+}
+/* .signup:hover{
+  background: #6ec2a6;
+  color: white; 
+ } 
+ */
+  
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #c2c5c5; */
+    background-color: #effdf9;
+    border-bottom: 1px solid #ddd;
+    height: 65px;
+    z-index: 10;
+}
+
+
+
+  
+.search-box {
+    padding: 5px;
+}
+
+/* for login.js file  */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 569px;
+    padding: 20px;
+    background-color: #f1f7f5;
+    border-radius: 10px;
+    margin-bottom: 95px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 434px
+}
+
+.line-input {
+    border: none;
+    border-bottom: 1px solid #000; /* Black bottom border to create line */
+    outline: none; /* Remove the blue outline when input is focused */
+    width: 400px;
+    padding: 5px 0; /* Padding for spacing */
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.position {
+    margin-top: 12px;
+    margin-bottom: 1rem;
+}
+
+.textspace{
+    margin-left: 39px;
+}
+
+.popup-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    font-weight: 500;
+}
+
+.login-actions {
+  border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 41px;
+  }
+
+  /* all page must come after nave bar */
+.main-content {
+    padding-top: 62px; /* adjusting the item apper after navbar */
+    margin: 0 auto;
+}
+
+.loginimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('/static/images/background/login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+
+}
+
+.login{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* admin dashboard  */
+.content-wrapper {
+  position: relative;
+  z-index: 1; /* Ensures content stays above background */
+  margin-left: 50px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.dashboard {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/images/background/admindashbord_final.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Keep this but ensure proper stacking */
+  margin-top: 65px; /* because of nav bar width is 65px so image come only after the nav bar */
+
+}
+
+.btn-outline-pink {
+  background-color: #ffe5e5;
+  border-color: #ffc0cb;
+  color: #d6336c;
+}
+
+/* for chapter form  */
+.chapter_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -65px;
+  width: 811px;
+  height: 555px;
+  padding: 20px;
+  background-color: #f1f7f5;
+  border-radius: 10px;
+  margin-bottom: 95px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: -6px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #000; /* Black bottom border to create line */
+  outline: none; /* Remove the blue outline when input is focused */
+  width: 698px;
+  padding: 5px 0; /* Padding for spacing */
+  background-color: transparent;
+  margin-top: 35px;
+}
+
+/* register user  */
+.registerpage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 617px;
+      height: 1020px;
+      padding: 43px;
+      background-color: #f1f7f5;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-left: -55px;
+}
+
+/* admin summary */
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-box {
+  flex: 1 1 45%;
+  max-width: 48%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chart-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.chart-canvas {
+    width: 106% !important;
+    height: 458px !important;
+}
+
+/* adding quiz style */
+
+.quizbody{
+  position: relative;
+  min-height: 100vh; /* allow growing */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: -90px;
+  padding-bottom: 364px;
+}
+
+.addquiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 617px;
+    height: 972px;
+    padding: 43px;
+    background-color: #f1f7f5;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 332px;
+    margin-bottom: -396px;
+}
+
+.registerimage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 100%; /* match content height */
+  width: 100%;
+  background-image: url('/static/images/background/add_quiz.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.addquestion{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 617px;
+    height: 972px;
+    padding: 43px;
+    background-color: #f1f7f5;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 280px;;
+    margin-bottom: -396px;
+}
+
+
+.quizimage{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/images/background/final2_quiz.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Keep this but ensure proper stacking */
+  margin-top: 65px; /* because of nav bar width is 65px so image come only after the nav bar */
+
+}
+
+
+.addquestionimage{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/images/background/final2_quiz.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Keep this but ensure proper stacking */
+  margin-top: 65px; /* because of nav bar width is 65px so image come only after the nav bar */
+}
+
+
+
+.editquestion{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 617px;
+    height: 1159px;
+    padding: 43px;
+    background-color: #f1f7f5;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 280px;;
+    margin-bottom: -396px;
+}

@@ -1,6 +1,6 @@
 # Quiz master app :- (quizex)
 This web app is provide practice for quiz where any one can login and able to attend the quiz and learn new concept of chapter this web app provide practice for each subject chapterwise practice 😘
-
+Commit_doc :- https://docs.google.com/document/u/8/d/e/2PACX-1vT3vAilbkk1HVEY54PfXBg4NxCsHfRjOYuEDS5ololuckz_z3u3E5xxGhFqQkwkLXw3j5TmWbDxRqzx/pub
 ## To run the Program
 follow the simple step
 
